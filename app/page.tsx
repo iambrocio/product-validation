@@ -69,7 +69,7 @@ export default function Home() {
                   href="#try"
                   className="group inline-flex items-center justify-center gap-2 rounded-xl bg-indigo-600 px-7 py-4 text-base font-semibold text-white hover:bg-indigo-700 transition-colors shadow-md shadow-indigo-200"
                 >
-                  Try the AI Agent Free
+                  Try the AI Agent — Starting at $19
                   <svg
                     width="16"
                     height="16"
