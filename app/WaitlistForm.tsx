@@ -35,7 +35,7 @@ export default function WaitlistForm() {
           type="email"
           required
           placeholder="you@example.com"
-          className="rounded-xl border border-zinc-300 px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+          className="rounded-xl border border-zinc-300 px-4 py-3 text-base text-zinc-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
         />
       </div>
 
@@ -46,7 +46,7 @@ export default function WaitlistForm() {
         <select
           id="vendorType"
           name="vendorType"
-          className="rounded-xl border border-zinc-300 px-4 py-3 text-base text-zinc-800 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent bg-white"
+          className="rounded-xl border border-zinc-300 px-4 py-3 text-base text-zinc-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent bg-white"
         >
           <option value="">Select a category…</option>
           <option value="food-beverage">Food &amp; Beverage</option>
@@ -69,7 +69,7 @@ export default function WaitlistForm() {
           name="painPoint"
           rows={3}
           placeholder="e.g. I spend hours Googling, events are last-minute, hard to know if it's worth the booth fee…"
-          className="rounded-xl border border-zinc-300 px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent resize-none"
+          className="rounded-xl border border-zinc-300 px-4 py-3 text-base text-zinc-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent resize-none"
         />
       </div>
 
@@ -82,7 +82,7 @@ export default function WaitlistForm() {
         disabled={isPending}
         className="rounded-xl bg-indigo-600 px-6 py-3 text-base font-semibold text-white hover:bg-indigo-700 disabled:opacity-60 disabled:cursor-not-allowed transition-colors"
       >
-        {isPending ? "Starting…" : "Try the AI Agent Free"}
+        {isPending ? "Starting…" : "Try the AI Agent — Starting at $19"}
       </button>
 
       <p className="text-xs text-zinc-500 text-center">
