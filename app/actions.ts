@@ -1,5 +1,7 @@
 "use server";
 
+import { redirect } from "next/navigation";
+
 type State = { success: boolean; error?: string } | null;
 
 export async function submitWaitlist(_prevState: State, formData: FormData): Promise<State> {
@@ -34,7 +36,7 @@ export async function submitWaitlist(_prevState: State, formData: FormData): Pro
 
   if (res.status === 409) {
     // Already subscribed — treat as success
-    return { success: true };
+    redirect("/thank-you");
   }
 
   if (!res.ok) {
@@ -43,5 +45,5 @@ export async function submitWaitlist(_prevState: State, formData: FormData): Pro
     return { success: false, error: message };
   }
 
-  return { success: true };
+  redirect("/thank-you");
 }
